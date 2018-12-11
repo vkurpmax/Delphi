@@ -1,2 +1,2 @@
 # Delphi
-what I learned using Lazarus
+| what I learned using Lazarus |
