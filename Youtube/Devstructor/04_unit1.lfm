@@ -1,0 +1,72 @@
+object Form1: TForm1
+  Left = 496
+  Height = 76
+  Top = 115
+  Width = 320
+  Caption = 'Calculator'
+  ClientHeight = 76
+  ClientWidth = 320
+  LCLVersion = '1.8.4.0'
+  object edtNumber1: TEdit
+    Left = 8
+    Height = 23
+    Top = 8
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 2
+  end
+  object edtNumber2: TEdit
+    Left = 128
+    Height = 23
+    Top = 8
+    Width = 80
+    NumbersOnly = True
+    TabOrder = 3
+  end
+  object lblOperation: TLabel
+    Left = 104
+    Height = 15
+    Top = 12
+    Width = 8
+    Caption = '+'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 216
+    Height = 15
+    Top = 12
+    Width = 8
+    Caption = '='
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnPlus: TButton
+    Left = 8
+    Height = 25
+    Top = 38
+    Width = 35
+    Caption = '+'
+    OnClick = btnPlusClick
+    TabOrder = 0
+  end
+  object btnMinus: TButton
+    Left = 53
+    Height = 25
+    Top = 38
+    Width = 35
+    Caption = '-'
+    OnClick = btnMinusClick
+    TabOrder = 1
+  end
+  object lblResult: TLabel
+    Left = 244
+    Height = 15
+    Top = 15
+    Width = 35
+    Caption = 'Result'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+end
