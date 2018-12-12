@@ -53,7 +53,6 @@ object Form1: TForm1
   end
   object Timer1: TTimer
     Enabled = False
-    Interval = 100
     OnTimer = Timer1Timer
     left = 8
     top = 8
