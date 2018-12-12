@@ -1,0 +1,63 @@
+object Form1: TForm1
+  Left = 458
+  Height = 146
+  Top = 101
+  Width = 250
+  Caption = 'Timer'
+  ClientHeight = 146
+  ClientWidth = 250
+  OnCreate = FormCreate
+  LCLVersion = '1.8.4.0'
+  object lblDisplay: TLabel
+    Left = 8
+    Height = 90
+    Top = 8
+    Width = 232
+    Alignment = taCenter
+    AutoSize = False
+    Caption = '0'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -64
+    Font.Name = 'Arial Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    OnClick = lblDisplayClick
+  end
+  object btnStart: TButton
+    Left = 8
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = 'Start'
+    OnClick = btnStartClick
+    TabOrder = 0
+  end
+  object btnStop: TButton
+    Left = 88
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = 'Stop'
+    OnClick = btnStopClick
+    TabOrder = 1
+  end
+  object btnClear: TButton
+    Left = 168
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = 'Clear'
+    OnClick = btnClearClick
+    TabOrder = 2
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer1Timer
+    left = 8
+    top = 8
+  end
+end
